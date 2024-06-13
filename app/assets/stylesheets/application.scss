@@ -1,0 +1,64 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ * {
+  box-sizing: border-box;
+}
+body {
+  background-image: url(asset-path("books-5937716_1280.jpg"));
+  background-size: cover; /* 画像を画面全体に拡大縮小 */
+  background-position: center; /* 画像の位置を中央に */
+  background-repeat: no-repeat; /* 画像の繰り返しを無効化 */
+  height: 100vh; /* ビューポートの高さを全体に設定 */
+  margin: 0; /* マージンをリセット */
+
+
+  h1 {
+    font-size: 100px;
+    color: antiquewhite;
+    text-align:center;
+    font-family: Arial, sans-serif;
+    
+
+  }
+  .header {
+    text-align: right;
+  }
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+  }
+  .button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: fffff1;
+    background-color: #ffffff; 
+    border: none;
+    border-radius: 25px; /* 丸みを強調 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加 */
+    transition: background-color 0.3s, transform 0.3s; /* アニメーション効果 */
+    
+  }
+  .button:hover {
+    background-color: #f0f0f0; /* ホバー時の色 */
+    transform: translateY(-2px); /* ホバー時に少し浮く */
+  }
+
+}
+
