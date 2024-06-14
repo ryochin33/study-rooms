@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##アプリケーション名  
+Study Rooms
 
-Things you may want to cover:
+##アプリケーション概要  
+自主学習できない人の為の、チャット型勉強部屋  
 
-* Ruby version
+##作成した背景
+オンラインで勉強しているが、どうしてもサボったり怠けたり、自分一人では怠けてしまう時がある。学校の自習室を想像してみたら分かるように、ある程度の監視と、周りが勉強している環境が、自分をやる気にさせたり、集中力が持続する要因になっている。そこをオンラインのチャット部屋を通じて誰かと勉強している感覚や、見られている感覚をアプリを通じて作っていきたい。また、勉強内容によってチャットの部屋を分けて、インプット、アウトプットもできるようにしたい。
 
-* System dependencies
+##環境開発  
+・HTML CSS
+・Rails
+・Javascript
+・GitHub
 
-* Configuration
+##工夫したポイント
+シンプルな機能にして、注意が逸れないようにした。勉強の敵は誘惑だと思うので、その要素を極力減らす。各チャットにルールを書くスペースを作った。ホストがルールを設定でき、そこに参加する人はそのルールを遵守し利用しなければいけない。チャットごとに個性が出るように。またホストからルールを違反したものは削除できるようにした。誰でもチャット部屋を作れる気軽さが売りだが、気軽さゆえの秩序のないチャットを避けるため。
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##改善点
+zoomなどで繋ぎながら勉強できる環境。見られている感覚が集中力を促せると思うので。
+チャット部屋の検索機能をつけて、過去の部屋でも検索かけれるように。
+あとは誹謗中傷のような部屋が生まれないような仕組み。一定のワードは打てない。通報機能。
