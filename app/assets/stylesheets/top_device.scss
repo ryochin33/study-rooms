@@ -1,0 +1,148 @@
+.header {
+  
+  height: 100vh; /* ビューポートの高さを全体に設定 */
+  margin: 0; /* マージンをリセット */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+
+/* トップページ用のスタイル */
+h1 {
+  font-size: 100px;
+  color: antiquewhite;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #524f4f;
+  background-color: #ffffff; 
+  border: none;
+  border-radius: 25px; /* 丸みを強調 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 影を追加 */
+  transition: background-color 0.3s, transform 0.3s; /* アニメーション効果 */
+}
+
+.button:hover {
+  background-color: #f0f0f0; /* ホバー時の色 */
+  transform: translateY(-2px); /* ホバー時に少し浮く */
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-header h2 {
+  color: rgb(244, 163, 57);
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.form-group input.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group input.form-control:focus {
+  border-color: rgb(244, 163, 57);
+  box-shadow: 0 0 5px rgba(250, 199, 127, 0.5);
+  outline: none;
+}
+
+.form-check {
+  display: flex;
+  align-items: center;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+.form-check-label {
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(244, 163, 57);
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+  background-color: rgb(244, 163, 57);
+  transform: translateY(-2px);
+}
+
+.links {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.links a {
+  color: rgb(244, 163, 57);
+}
+
+/* トップページ用のスタイル */
+h1 {
+  font-size: 100px;
+  color: rgb(244, 163, 57);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: right;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
