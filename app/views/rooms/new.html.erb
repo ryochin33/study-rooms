@@ -1,5 +1,27 @@
 <div class='chat-room-form'>
   <h1>新規チャットルーム</h1>
+
+<% if @room.errors.any? %>
+    <div class="error_messages">
+      <h2>以下のエラーがあります:</h2>
+      <ul>
+        <% @room.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+
+
+
+
+
+
+
+
+
   <%=form_with model: @room, local: true do |f|%>
     <div class='chat-room-form__field'>
       <div class='chat-room-form__field--left'>
@@ -7,6 +29,18 @@
       </div>
       <div class='chat-room-form__field--right'>
         <%= f.text_field :name, class: 'chat__room_name chat-room-form__input', placeholder: 'チャットルーム名を入力してください'%>
+      </div>
+    </div>
+    <div class='chat-room-form__field'>
+    </div>
+
+
+<div class='chat-room-form__field'>
+      <div class='chat-room-form__field--left'>
+        <%= f.label :name, :ビデオ通話URL, class: 'chat-room-form__label'%>
+      </div>
+      <div class='chat-room-form__field--right'>
+        <%= f.text_field :url, class: 'chat__room_name chat-room-form__input', placeholder: 'ビデオ通話URLを入力してください'%>
       </div>
     </div>
     <div class='chat-room-form__field'>
