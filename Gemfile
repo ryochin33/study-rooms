@@ -75,3 +75,4 @@ gem 'sassc-rails'
 
 gem 'devise'
 
+gem 'pry-rails'

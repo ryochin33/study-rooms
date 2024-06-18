@@ -2,7 +2,9 @@
     <div class="side-bar">
   <%= render "side_bar" %>
   </div>
-  <div class="chat">
+        <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete }, class: 'btn'%>
+
+   <div class="chat">
   <%= render "main_chat" %>
-  </div>
-</div>
+  </div>   
+</div> 
