@@ -1,19 +1,28 @@
-<% if @room%>
 <div class="chat-header">
   <div class="left-header">
     <div class="header-title">
-            <%= @room.name %>
+                <%= @room.name %>
     </div>
+    
   </div>
   <div class="right-header">
     <div class="header-button">
-      <a href="#">チャットを終了する</a>
+      <%= link_to "チャットを終了する", room_path(@room), data: { turbo_method: :delete } %>
     </div>
   </div>
 </div>
 
 <div class="messages">
-    <%= render partial: 'messages/message', collection: @messages %>
+  <div class="video-url">
+      ビデオ通話URL
+                <%= @room.url %>
+    </div>
+  <div class="chat-rule">
+    <%= @room.rules %>
+    </div>
+
+
+     <%= render partial: 'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], html: {class: "form"}, local: true do |f|%>
@@ -22,10 +31,3 @@
   </div>
   <%= f.submit '送信', class: 'form-submit' %>
 <% end %>
-<% else %>
-<P>チャットルームが選択されていません。</p>
-<% end %>
-
-<%# デバッグ情報 %>
-<p>Current room: <%= @room.inspect %></p>
-<p>Rooms count: <%= @rooms.count %></p>
