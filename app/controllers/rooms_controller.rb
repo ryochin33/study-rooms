@@ -3,14 +3,17 @@ class RoomsController < ApplicationController
 
   def index
     @rooms = Room.all
-    @room = Room.first
-    @messages = @room ? @room.messages.includes(:user).order(created_at: :desc) : []
+    
   end
 
   def new
     @room = Room.new
   end
 
+  def show
+    @room = Room.find(params[:id])
+  end
+  
   def create
     @room = Room.new(room_params)
     if @room.save
